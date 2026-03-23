@@ -57,6 +57,9 @@ class HumanitZPlugin(GamePlugin):
             if match:
                 players.append(PlayerInfo(name=match.group(1).strip(), steam_id=match.group(2)))
             else:
+                # Skip error/exception strings that shouldn't be player names
+                if line.startswith("Error:") or line.startswith("Traceback") or "exception" in line.lower():
+                    continue
                 # Fallback: treat whole line as name
                 players.append(PlayerInfo(name=line))
         return players
