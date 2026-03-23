@@ -1,0 +1,8 @@
+{
+  "name": "garrison-plugin-humanitz",
+  "version": "1.0.0",
+  "game_type": "humanitz",
+  "display_name": "HumanitZ",
+  "author": "ProfessorZ",
+  "description": "HumanitZ dedicated server plugin for Garrison"
+}
