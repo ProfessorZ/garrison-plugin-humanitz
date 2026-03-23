@@ -45,7 +45,7 @@ class HumanitZPlugin(GamePlugin):
         or simply a list of names. Falls back gracefully.
         """
         players: list[PlayerInfo] = []
-        if not raw_response or not raw_response.strip():
+        if not raw_response or not raw_response.strip() or raw_response.strip() == "None":
             return players
 
         for line in raw_response.strip().splitlines():
