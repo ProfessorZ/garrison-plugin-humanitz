@@ -1,8 +1,15 @@
 {
+  "id": "humanitz",
   "name": "garrison-plugin-humanitz",
   "version": "1.0.0",
-  "game_type": "humanitz",
   "display_name": "HumanitZ",
+  "description": "Source RCON plugin for HumanitZ dedicated servers",
   "author": "ProfessorZ",
-  "description": "HumanitZ dedicated server plugin for Garrison"
+  "repo": "https://github.com/ProfessorZ/garrison-plugin-humanitz",
+  "garrison_api": "1",
+  "default_ports": {
+    "game": 7777,
+    "rcon": 8888
+  },
+  "icon": "🧟"
 }
